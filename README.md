@@ -1,4 +1,4 @@
-# 이 링크좀 봐주세요
+# EKS <-> ECR <->  ArgoCD 구축
 https://sungbin-park.tistory.com/122
 
 # 🚀 Pytest 실습 Repository
