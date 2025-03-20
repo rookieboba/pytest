@@ -1,3 +1,6 @@
+# 이 링크좀 봐주세요
+https://sungbin-park.tistory.com/122
+
 # 🚀 Pytest 실습 Repository
 
 이 저장소는 `pytest`를 활용한 자동화 테스트를 연습하기 위한 프로젝트입니다.  
