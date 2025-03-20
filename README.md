@@ -4,6 +4,10 @@
 API 테스트, 유닛 테스트, 예외 처리, 로깅, CI/CD 연동 등을 포함합니다.  
 추후 AWS 와 연동하여 해보기
 
+```bash
+git clone -b main https://github.com/rookieboba/pytest/
+```
+
 ---
 
 ## 📌 프로젝트 개요
