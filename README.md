@@ -145,5 +145,5 @@ jobs:
 ---
 
 ## ✅ 마무리
-
-🚀 `pytest`를 활용하여 QA 자동화 테스트를 연습할 수 있는 저장소입니다.  
+참고)
+https://docs.pytest.org/en/stable/how-to/usage.html
