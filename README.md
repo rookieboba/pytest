@@ -83,7 +83,7 @@ pytest tests/test_api.py
 📌 **특정 테스트 함수 실행**
 
 ```bash
-pytest tests/test_api.py::test_get_user_success
+pytest tests/test_auth.py::test_login_success
 ```
 
 📌 **로그 출력 테스트 실행**
