@@ -1,5 +1,5 @@
 import pytest
-from auth import AuthService
+from src.auth import AuthService
 
 @pytest.fixture
 def auth_service():
