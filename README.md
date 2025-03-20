@@ -29,21 +29,12 @@ API 테스트, 유닛 테스트, 예외 처리, 로깅, CI/CD 연동 등을 포�
 ```
 pytest-project/
 │── src/                 # 개발 코드 (테스트 대상)
-│   ├── api_service.py   # API 관련 코드
-│   ├── calculator.py    # 계산기 기능 코드
-│   ├── file_reader.py   # 파일 처리 코드
-│
-│── tests/               # 📌 Pytest 테스트 코드
-│   ├── test_api.py      # API 테스트 코드
-│   ├── test_calc.py     # 계산기 테스트 코드
-│   ├── test_file.py     # 파일 처리 테스트 코드
-│   ├── conftest.py      # 공통 fixture 설정
-│
+│── tests/               #  Pytest 테스트 코드
 │── .github/             # GitHub Actions 설정
 │── .gitignore           # Git에 올리지 않을 파일 설정
 │── pytest.ini           # pytest 설정 파일
 │── requirements.txt     # Python 패키지 목록
-│── README.md            # 프로젝트 설명 파일
+│── README.md            # 프로젝트 설명 파일ttt#
 ```
 
 ---
