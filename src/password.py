@@ -21,3 +21,5 @@ def is_valid_password(password: str) -> bool:
     count = sum([has_upper, has_lower, has_digit, has_special]) #3종류 이상 포함
     if count < 3:
         return False
+    
+    return True
