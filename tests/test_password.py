@@ -1,17 +1,24 @@
 import pytest
 from src.password import is_valid_password
 
-@pytest.mark.parametrize( # 테스트 함수에 여러 입력값을 전달해, 자동으로 반복 실행할 수 있게 해주는 기능
-    "password, expected", #expected는 예상되는 결과값
+@pytest.mark.parametrize(
+    "password, expected",
     [
         ("ABCDEFGH", False),
-        ("Ab1!efgh", False),
+        ("Ab1!efgh", False),  # 이 케이스는 실제 함수 구현에 따라 True일 수도
         ("PASSWORD123", False),
         ("Pass 123!", False),
         ("P@ssword", True),
         ("Ab1!", False)
+    ],
+    ids=[
+        "only-uppercase",
+        "should-be-valid",           # 또는 "check-failure"
+        "missing-special-or-lower",
+        "contains-space",
+        "valid-basic",
+        "too-short"
     ]
 )
-
 def test_is_valid_password(password, expected):
     assert is_valid_password(password) == expected
