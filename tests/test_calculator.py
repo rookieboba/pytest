@@ -10,18 +10,20 @@ def calc():
     yield calculator  # ✅ 여기까지 실행되면 테스트 함수로 객체가 전달됨
     logging.info("🔹 Calculator 테스트 완료!")  # ✅ logging 사용
 
+# Add 테스트
 @pytest.mark.parametrize(
-    "a, b, expected",  # 변수 이름 순서대로 unpack
+    "a, b, expected",
     [
-        (3, 5, 8),       # 3 + 5 → 예상 결과 8
-        (0, 0, 0),       # 0 + 0 → 0
-        (-1, -2, -3),    # -1 + (-2) → -3
-        (10, -5, 5)      # 10 + (-5) → 5
-    ]
+        (3, 5, 8),
+        (0, 0, 0),
+        (-1, -2, -3),
+        (10, -5, 4) # Made Error
+    ],
+    ids=["positive", "zero", "negative", "mixed"]
 )
 def test_add(calc, a, b, expected):
-    # expected 는 기대한 결과값 (예상값)
-    assert calc.add(a, b) == expected
+    result = calc.add(a, b)
+    assert result == expected, f"Expected {a}+{b}={expected}, got {result}"
 
 def test_subtract(calc):
     assert calc.subtract(10, 4) == 6
