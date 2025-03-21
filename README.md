@@ -86,7 +86,7 @@ pytest tests/test_api.py
 pytest tests/test_auth.py::test_login_success
 ```
 
-📌 **로그 출력 테스트 실행**
+📌 **로그 출력 테스트 실행 / 나의 경우 코드 짤때 logging.info 로 하니, 이녀석 실행해야 한다**
 
 ```bash
 pytest -s tests/test_calc.py
