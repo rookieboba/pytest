@@ -12,7 +12,7 @@
 # --------------------------------------------
 
 class BlkDevCreate:
-    VALID_TYPES = {"ssd", "hdd", "nvme"}
+    VALID_TYPES = {"ssd", "hdd", "nvme"} # class 안에서 선언인지는 잘 모르겠네
 
     def create(self, device: dict) -> str:
         required_fields = {"name", "size", "type", "description"} #필요한 거 다 넣고 하나하나 ㅋㅋ
@@ -39,4 +39,5 @@ class BlkDevCreate:
             return "description invalid"
 
         # 생성 로직 생략 (실제 클라우드 SDK 호출이 들어갈 자리)
+        # DB Call 같은건 개발팀이 했겠지
         return "Created"
