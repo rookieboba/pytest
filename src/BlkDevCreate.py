@@ -15,10 +15,10 @@ class BlkDevCreate:
     VALID_TYPES = {"ssd", "hdd", "nvme"}
 
     def create(self, device: dict) -> str:
-        required_fields = {"name", "size", "type", "description"} #필요한 거 다 넣고 하나하낯ㅋ
-        missing = required_fields - device.keys()
-        if missing:
-            return f"missing field: {missing.pop()}"
+        required_fields = {"name", "size", "type", "description"} #필요한 거 다 넣고 하나하나 ㅋㅋ
+        missing = required_fields - device.keys() # 4 - 4 가 되어야 정상임
+        if missing: # if(0) 이면 == 4개가 다 입력되었다면 
+            return f"missing field: {missing.pop()}"  # 다시 코드 짜라는거
 
         name = device["name"]
         if not isinstance(name, str) or " " in name or not (3 <= len(name) <= 30):
