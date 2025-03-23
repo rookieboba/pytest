@@ -40,4 +40,5 @@ class BlkDevCreate:
 
         # 생성 로직 생략 (실제 클라우드 SDK 호출이 들어갈 자리)
         # DB Call 같은건 개발팀이 했겠지
+        # https://carpe08.tistory.com/374
         return "Created"
