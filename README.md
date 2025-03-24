@@ -40,7 +40,8 @@ git clone -b main https://github.com/rookieboba/pytest/
 ```
 pytest-project/
 │── src/                 # 개발 코드 (테스트 대상)
-│── tests/               #  Pytest 테스트 코드
+│── tests/               # Pytest 테스트 코드
+│── selenium/            # selenium 테스트 코드
 │── .github/             # GitHub Actions 설정
 │── .gitignore           # Git에 올리지 않을 파일 설정
 │── pytest.ini           # pytest 설정 파일
