@@ -11,13 +11,16 @@
 # 실패 시 상세 오류 메시지 리턴
 # --------------------------------------------
 
+
 class BlkDevCreate:
     VALID_TYPES = {"ssd", "hdd", "nvme"} # class 안에서 선언인지는 잘 모르겠네
 
     def create(self, device: dict) -> str:
         required_fields = {"name", "size", "type", "description"} #필요한 거 다 넣고 하나하나 ㅋㅋ
-        missing = required_fields - device.keys() # 4 - 4 가 되어야 정상임
-        if missing: # if(0) 이면 == 4개가 다 입력되었다면 
+        # print(device.keys())
+        # print(device.values())
+        missing = required_fields - device.keys() # set 이니까 차집합으로 빼기
+        if missing: # 빈 집합이 아닐경우, 아래 문장 실행
             return f"missing field: {missing.pop()}"  # 다시 코드 짜라는거
 
         name = device["name"]
