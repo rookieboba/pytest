@@ -1,9 +1,3 @@
-# EKS <-> ECR <->  ArgoCD 구축
-https://sungbin-park.tistory.com/122
-
-# 좋은 Pytest 링크
-https://sangjuncha-dev.github.io/posts/programming/python/2022-02-08-python-pytest-guide/
-
 # 🚀 Pytest 실습 Repository
 
 이 저장소는 `pytest`를 활용한 자동화 테스트를 연습하기 위한 프로젝트입니다.  
