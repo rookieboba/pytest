@@ -35,3 +35,15 @@ class UserSignup:
 
     def _is_valid_gender(self, gender) -> bool:
         return gender in self.VALID_GENDERS
+
+# if __name__ == "__main__":
+#     user = {
+#         "username": "sungbin",
+#         "password": "secure123",
+#         "email": "sungbin@example.com",
+#         "gender": "M"
+#     }
+
+#     service = UserSignup()
+#     result = service.signup(user)
+#     print(result)  # → "Signup Successful"
