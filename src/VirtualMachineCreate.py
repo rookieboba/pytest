@@ -12,7 +12,7 @@ class VirtualMachineCreate:
 
         # name 유효성 검사
         if not isinstance(vm["name"], str) or len(vm["name"]) < 3 or " " in vm["name"]:
-            return "name invalid"
+            return "name invalid. u"
 
         # image는 반드시 prolinux8.6 이어야 함
         if vm["image"] != "prolinux8.6":
