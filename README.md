@@ -77,7 +77,7 @@ pytest
 📌 **특정 파일 테스트 실행**
 
 ```bash
-pytest tests/test_api.py
+pytest tests/test_BlkDevCreate.py
 ```
 
 📌 **특정 테스트 함수 실행**
@@ -86,33 +86,10 @@ pytest tests/test_api.py
 pytest tests/test_auth.py::test_login_success
 ```
 
-📌 **로그 출력 테스트 실행 / 나의 경우 코드 짤때 logging.info 로 하니, 이녀석 실행해야 한다**
-
-```bash
-pytest -s tests/test_calc.py
-```
-
 📌 **테스트 커버리지 확인**
 
 ```bash
 pytest --cov=src
-```
-
----
-
-## 🐳 3️⃣ Docker 환경에서 실행 (선택)
-
-📌 **Docker 컨테이너에서 `pytest` 실행**
-
-```bash
-docker build -t pytest-container .
-docker run --rm pytest-container
-```
-
-📌 **Docker Compose 사용 (선택)**
-
-```bash
-docker-compose up --build
 ```
 
 ---
