@@ -1,5 +1,10 @@
 # 🚀 Pytest 실습 Repository
 
+![pytest](https://img.shields.io/badge/tested%20with-pytest-brightgreen.svg)
+![python](https://img.shields.io/badge/python-3.11-blue)
+![CI](https://github.com/rookieboba/pytest/actions/workflows/pytest.yml/badge.svg)
+![license](https://img.shields.io/github/license/rookieboba/pytest)
+
 이 저장소는 `pytest`를 활용한 자동화 테스트를 연습하기 위한 프로젝트입니다.  
 API 테스트, 유닛 테스트, 예외 처리, 로깅, CI/CD 연동 등을 포함합니다.  
 추후 AWS 와 연동하여 해보기
